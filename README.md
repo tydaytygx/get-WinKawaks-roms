@@ -1,5 +1,5 @@
 # get-WinKawaks-roms
-Python3, get-WinKawaks-roms
+get WinKawaks roms with pyhon3.
 # How To Use
 ```
 pip3 install -r requirements.txt
