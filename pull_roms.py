@@ -9,8 +9,6 @@ with open('full-rom-list.html', 'w') as file_write:
     file_write.write(r.text)
 
 soup = BeautifulSoup(open("full-rom-list.html"), 'html.parser')
-# print(soup.prettify())
-# parsed_html = BeautifulSoup(html)
 for link in soup.find_all('div', 'rom-system-index-entry-full'):
     print(url + link.next.next.get('href')[:-4] + '-download.htm')
 
