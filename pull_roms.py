@@ -5,9 +5,6 @@ from bs4 import BeautifulSoup
 url = 'https://www.winkawaks.org/roms/full-rom-list.htm'
 
 r = requests.get(url)
-opener = urllib.request.URLopener()
-opener.addheader('User-Agent', 'whatever')
-opener.retrieve(url, 'Test.pdf')
 with open('full-rom-list.html', 'w') as file_write:
     file_write.write(r.text)
 
